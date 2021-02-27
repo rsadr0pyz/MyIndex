@@ -1,0 +1,3 @@
+compile-sass: Compile and compact all sass code in distribution/src/scss to a css file with same name in distribution/public/css
+compile-js: Compact all js code in distribution/src/js to a js file with same name in distribution/public/js
+compile-all: execute compile-sass and compile-js
