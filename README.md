@@ -1,2 +1,2 @@
 # MyIndex
-A simple index for my projects
+A simple index for my projects.
