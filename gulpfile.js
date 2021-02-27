@@ -26,3 +26,20 @@ gulp.task('compile-all', async() => {
     compileSASS()
     compileJS()
 })
+
+gulp.task('watch', async() => {
+    const watcher = gulp.watch(["distribution/src/js/", "distribution/src/scss/"])
+
+    const check = function(path, stats) {
+        const dirs = path.split("/")
+        if (dirs[dirs.length - 1].endsWith(".scss")) {
+            compileSASS()
+        } else {
+            compileJS()
+        }
+    }
+
+    watcher.on('change', check);
+    watcher.on('add', check)
+
+})
