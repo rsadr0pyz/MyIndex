@@ -15,5 +15,11 @@
   "bugs": {
     "url": "https://github.com/rsadr0pyz/MyIndex/issues"
   },
-  "homepage": "https://github.com/rsadr0pyz/MyIndex#readme"
+  "homepage": "https://github.com/rsadr0pyz/MyIndex#readme",
+  "devDependencies": {
+    "gulp": "^4.0.2",
+    "gulp-sass": "^4.1.0",
+    "gulp-uglify": "^3.0.2",
+    "gulp-uglifycss": "^1.1.0"
+  }
 }
